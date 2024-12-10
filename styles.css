@@ -1,0 +1,390 @@
+
+body {
+    background-color: #152127;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #999;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header a {
+    margin-left: 40px;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.logo:hover{
+    color: aquamarine;
+    text-shadow: 0 0 25px aquamarine, 
+                 0 0 0 50 aquamarine;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+span {
+    color: aquamarine;
+}
+
+.nav-bar a{
+    font-size: 18px;
+    color:#ffffff;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-bar a:hover,
+.nav-bar a:active {
+    color: aquamarine;
+    border-bottom: 3px solid aquamarine;
+    text-decoration: none;
+}
+
+
+
+
+.container { /* div contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid aquamarine 2px;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.figure { /* Contenedor de imagen de perfil */
+    display: inline-block;
+    border: solid aquamarine 2px;
+    border-radius: 100%;
+}
+
+.figure img { /* Imagen de perfil */
+    width: 300px;
+    border-radius: 100%;
+}
+
+.info { /* Contenedor de nombre y descripcion */
+    display: inline-block;
+    align-items: center;
+    width: 500px;
+    margin-left: 30px;
+}
+
+h1, p {
+   text-align: center;
+   color: #ffffff;
+}
+
+.info img {  /* Iconos links */
+    display: inline;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {   /* Iconos links */
+    margin: 10px;
+}
+
+
+
+
+
+.container2 { /* div contenedor  body*/
+    min-height: 100vh; /* Ajustar tamano pantalla*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid aquamarine 2px;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box {
+    position: relative;
+    width: 620px;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 15px;
+}
+
+.box .skill {
+    margin: 20px 0;
+}
+
+.box .skill p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .skill .progress {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #999;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.box .skill .progress::before {
+    content: '';
+    position: absolute;
+    width: var(--wth);
+    height: 100%;
+    background-color: aqua;
+}
+
+
+
+
+
+
+.container3 {
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border: solid aquamarine 2px;
+    display: flex;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box2 {
+    position: relative;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 150px;
+}
+
+.grid {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.item {
+    display: block;
+    object-fit: cover;
+    min-width: 100px;
+    width: 80%;
+    flex: 2;
+    transition: flex .5s;
+}
+
+.item:hover {
+    flex: 4;
+}
+
+.footer {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+.container4 {
+    border: solid aquamarine 2px;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.box3 {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+.box3-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box3-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color:aquamarine;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box3 {
+    position:relative;
+}
+
+.input-box3 > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+.input-box3 > input::placeholder,
+.input-box3 > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box3 > input:focus::placeholder,
+.input-box3 > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box3 > input:focus,
+.input-box3 > textarea:focus {
+    border-bottom:3px solid aquamarine;
+    animation: shake .2s;
+}
+
+.input-box3 > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box3 > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box3 > input:focus ~ i {
+    color:aquamarine;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: aquamarine;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: aquamarine;
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
+
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .box3-info {
+        gap:15px;
+    }
+
+    .box3-info > h1 {
+        font-size: 1.5rem;
+    }
+}
